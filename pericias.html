@@ -1,0 +1,353 @@
+<div>
+    <div>
+        <h6>PERÍCIAS</h6>
+    </div>
+    <div>
+        <span>PERÍCIA</span>
+        <span>DADOS</span>
+        <span>BÔNUS</span>
+        <span>Treino</span>
+        <span>Outros</span>
+    </div>
+    <div>
+        <div>
+            <label>ACROBACIA+ </label>
+            <input type="text" name="attr_acrobatics_base_att" value="AGI" disabled>
+            <input type="text" name="attr_acrobatics_bonus" value="@{acrobatics_training} + @{acrobatics_other}">
+            <select name="attr_acrobatics_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_acrobatics_other" value="0">
+        </div>
+        <div>
+            <label>ADESTRAMENTO* </label>
+            <input type="text" name="attr_handling_base_att" value="PRE" disabled>
+            <input type="text" name="attr_handling_bonus" value="@{handling_training} + @{handling_other}">
+            <select name="attr_handling_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_handling_other" value="0">
+        </div>
+        <div>
+            <label>ARTES* </label>
+            <input type="text" name="attr_art_base_att" value="PRE" disabled>
+            <input type="text" name="attr_art_bonus" value="@{art_training} + @{art_other}">
+            <select name="attr_art_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_art_other" value="0">
+        </div>
+        <div>
+            <label>ATLETISMO </label>
+            <input type="text" name="attr_athletics_base_att" value="FOR" disabled>
+            <input type="text" name="attr_athletics_bonus" value="@{athletics_training} + @{athletics_other}">
+            <select name="attr_athletics_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_athletics_other" value="0">
+        </div>
+        <div>
+            <label>ATUALIDADES </label>
+            <input type="text" name="attr_news_base_att" value="INT" disabled>
+            <input type="text" name="attr_news_bonus" value="@{news_training} + @{news_other}">
+            <select name="attr_news_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_news_other" value="0">
+        </div>
+        <div>
+            <label>CIÊNCIAS* </label>
+            <input type="text" name="attr_science_base_att" value="INT" disabled>
+            <input type="text" name="attr_science_bonus" value="@{science_training} + @{science_other}">
+            <select name="attr_science_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_science_other" value="0">
+        </div>
+        <div>
+            <label>CRIME*+ </label>
+            <input type="text" name="attr_crime_base_att" value="AGI" disabled>
+            <input type="text" name="attr_crime_bonus" value="@{crime_training} + @{crime_other}">
+            <select name="attr_crime_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_crime_other" value="0">
+        </div>
+        <div>
+            <label>DIPLOMACIA </label>
+            <input type="text" name="attr_diplomacy_base_att" value="PRE" disabled>
+            <input type="text" name="attr_diplomacy_bonus" value="@{diplomacy_training} + @{diplomacy_other}">
+            <select name="attr_diplomacy_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_diplomacy_other" value="0">
+        </div>
+        <div>
+            <label>ENGANAÇÃO </label>
+            <input type="text" name="attr_trickery_base_att" value="PRE" disabled>
+            <input type="text" name="attr_trickery_bonus" value="@{trickery_training} + @{trickery_other}">
+            <select name="attr_trickery_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_trickery_other" value="0">
+        </div>
+        <div>
+            <label>FORTITUDE </label>
+            <input type="text" name="attr_fortitude_base_att" value="VIG" disabled>
+            <input type="text" name="attr_fortitude_bonus" value="@{fortitude_training} + @{fortitude_other}">
+            <select name="attr_fortitude_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_fortitude_other" value="0">
+        </div>
+        <div>
+            <label>FURTIVIDADE+ </label>
+            <input type="text" name="attr_stealth_base_att" value="AGI" disabled>
+            <input type="text" name="attr_stealth_bonus" value="@{stealth_training} + @{stealth_other}">
+            <select name="attr_stealth_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_stealth_other" value="0">
+        </div>
+        <div>
+            <label>INICIATIVA </label>
+            <input type="text" name="attr_initiative_base_att" value="AGI" disabled>
+            <input type="text" name="attr_initiative_bonus" value="@{initiative_training} + @{initiative_other}">
+            <select name="attr_initiative_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_initiative_other" value="0">
+        </div>
+        <div>
+            <label>INTIMIDAÇÃO </label>
+            <input type="text" name="attr_intimadation_base_att" value="PRE" disabled>
+            <input type="text" name="attr_intimadation_bonus" value="@{intimadation_training} + @{intimadation_other}">
+            <select name="attr_intimadation_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_intimadation_other" value="0">
+        </div>
+        <div>
+            <label>INTUIÇÃO </label>
+            <input type="text" name="attr_insight_base_att" value="PRE" disabled>
+            <input type="text" name="attr_insight_bonus" value="@{insight_training} + @{insight_other}">
+            <select name="attr_insight_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_insight_other" value="0">
+        </div>
+        <div>
+            <label>INVESTIGAÇÃO </label>
+            <input type="text" name="attr_investigation_base_att" value="INT" disabled>
+            <input type="text" name="attr_investigation_bonus" value="@{investigation_training} + @{investigation_other}">
+            <select name="attr_investigation_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_investigation_other" value="0">
+        </div>
+        <div>
+            <label>LUTA </label>
+            <input type="text" name="attr_melee_base_att" value="FOR" disabled>
+            <input type="text" name="attr_melee_bonus" value="@{melee_training} + @{melee_other}">
+            <select name="attr_melee_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_melee_other" value="0">
+        </div>
+        <div>
+            <label>MEDICINA </label>
+            <input type="text" name="attr_medicine_base_att" value="INT" disabled>
+            <input type="text" name="attr_medicine_bonus" value="@{medicine_training} + @{medicine_other}">
+            <select name="attr_medicine_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_medicine_other" value="0">
+        </div>
+        <div>
+            <label>OCULTISMO* </label>
+            <input type="text" name="attr_occultism_base_att" value="INT" disabled>
+            <input type="text" name="attr_occultism_bonus" value="@{occultism_training} + @{occultism_other}">
+            <select name="attr_occultism_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_occultism_other" value="0">
+        </div>
+        <div>
+            <label>PERCEPÇÃO </label>
+            <input type="text" name="attr_perception_base_att" value="PRE" disabled>
+            <input type="text" name="attr_perception_bonus" value="@{perception_training} + @{perception_other}">
+            <select name="attr_perception_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_perception_other" value="0">
+        </div>
+        <div>
+            <label>PILOTAGEM* </label>
+            <input type="text" name="attr_piloting_base_att" value="AGI" disabled>
+            <input type="text" name="attr_piloting_bonus" value="@{piloting_training} + @{piloting_other}">
+            <select name="attr_piloting_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_piloting_other" value="0">
+        </div>
+        <div>
+            <label>PONTARIA* </label>
+            <input type="text" name="attr_aim_base_att" value="AGI" disabled>
+            <input type="text" name="attr_aim_bonus" value="@{aim_training} + @{aim_other}">
+            <select name="attr_aim_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_aim_other" value="0">
+        </div>
+        <div>
+            <label> <input type="text" value="PROFISSÃO*" name="attr_profession"> </label>
+            <input type="text" name="attr_profession_base_att" value="INT" disabled>
+            <input type="text" name="attr_profession_bonus" value="@{profession_training} + @{profession_other}">
+            <select name="attr_profession_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_profession_other" value="0">
+        </div>
+        <div>
+            <label>REFLEXOS </label>
+            <input type="text" name="attr_reflexes_base_att" value="AGI" disabled>
+            <input type="text" name="attr_reflexes_bonus" value="@{reflexes_training} + @{reflexes_other}">
+            <select name="attr_reflexes_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_reflexes_other" value="0">
+        </div>
+        <div>
+            <label>RELIGIÃO* </label>
+            <input type="text" name="attr_religion_base_att" value="PRE" disabled>
+            <input type="text" name="attr_religion_bonus" value="@{religion_training} + @{religion_other}">
+            <select name="attr_religion_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_religion_other" value="0">
+        </div>
+        <div>
+            <label>SOBREVIVÊNCIA </label>
+            <input type="text" name="attr_survival_base_att" value="INT" disabled>
+            <input type="text" name="attr_survival_bonus" value="@{survival_training} + @{survival_other}">
+            <select name="attr_survival_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_survival_other" value="0">
+        </div>
+        <div>
+            <label>TÁTICA* </label>
+            <input type="text" name="attr_tatics_base_att" value="INT" disabled>
+            <input type="text" name="attr_tatics_bonus" value="@{tatics_training} + @{tatics_other}">
+            <select name="attr_tatics_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_tatics_other" value="0">
+        </div>
+        <div>
+            <label>TECNOLOGIA* </label>
+            <input type="text" name="attr_technology_base_att" value="INT" disabled>
+            <input type="text" name="attr_technology_bonus" value="@{technology_training} + @{technology_other}">
+            <select name="attr_technology_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_technology_other" value="0">
+        </div>
+        <div>
+            <label>VONTADE</label>
+            <input type="text" name="attr_will_base_att" value="PRE" disabled>
+            <input type="text" name="attr_will_bonus" value="@{will_training} + @{will_other}">
+            <select name="attr_will_training">
+                <option value="0" selected>D</option>
+                <option value="5">T</option>
+                <option value="10">V</option>
+                <option value="15">E</option>
+            </select>
+            <input type="text" name="attr_will_other" value="0">
+        </div>
+    </div>
+    <div>
+        <span>+ Penalidade de carga. * Somente treinada.</span>
+    </div>
+</div>

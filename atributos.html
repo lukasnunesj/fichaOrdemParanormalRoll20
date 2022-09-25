@@ -1,0 +1,191 @@
+<div>
+    <!-- Attributes -->
+    <div>
+        <div>
+            <label>
+                Agilidade
+                <span>AGI</span>
+            </label>
+            <input type="text" name="attr_agility" value="" spellcheck="false" />
+        </div>
+        <div>
+            <label>
+                Força
+                <span>FOR</span>
+            </label>
+            <input type="text" name="attr_strength" value="" spellcheck="false" />
+        </div>
+        <div>
+            <label>
+                Presença
+                <span>PRE</span>
+            </label>
+            <input type="text" name="attr_presence" value="" spellcheck="false" />
+        </div>
+        <div>
+            <label>
+                Vigor
+                <span>VIG</span>
+            </label>
+            <input type="text" name="attr_vigor" value="" spellcheck="false" />
+        </div>
+        <div>
+            <label>
+                Intelecto
+                <span>INT</span>
+            </label>
+            <input type="text" name="attr_intellect" value="" spellcheck="false" />
+        </div>
+    </div>
+    <!-- End Attributes -->
+    <div>
+        <div>
+            <label>Origem</label>
+            <!--
+              Acadêmico,Agente de Saúde,Amnésico,Artista,Atleta,Chef,Criminoso,Cultista Arrependido,Desgarrado,Engenheiro,Executivo,Investigador,Lutador,Magnata,Mercenário,Militar,Operário,Policial,Religioso,Servidor Público,T.I.,Teórico da Conspiração,Trabalhador Rural,Trambiqueiro,Universitário,Vítima
+            -->
+            <select name="attr_origin">
+                <option value="academic">Acadêmico</option>
+                <option value="health_agent">Agente de Saúde</option>
+                <option value="amnesic">Amnésico</option>
+                <option value="artist">Artista</option>
+                <option value="athlete">Atleta</option>
+                <option value="chef">Chef</option>
+                <option value="criminal">Criminoso</option>
+                <option value="repentant_cultist">Cultista Arrependido</option>
+                <option value="strayed">Desgarrado</option>
+                <option value="engineer">Engenheiro</option>
+                <option value="executive">Executivo</option>
+                <option value="investigator">Investigador</option>
+                <option value="fighter">Lutador</option>
+                <option value="tycoon">Magnata</option>
+                <option value="mercenary">Mercenário</option>
+                <option value="military">Militar</option>
+                <option value="factory_worker">Operário</option>
+                <option value="police">Policial</option>
+                <option value="religious">Religioso</option>
+                <option value="public_server">Servidor Público</option>
+                <option value="technology">T.I.</option>
+                <option value="cospiracy_theorist">Teórico da Conspiração</option>
+                <option value="rural_worker">Trabalhador Rural</option>
+                <option value="crook">Trambiqueiro</option>
+                <option value="university">Universitário</option>
+                <option value="victim">Vítima</option>
+            </select>
+        </div>
+        <div>
+            <label>Classe</label>
+            <select name="attr_class">
+                <option value="fighter">Combatente</option>
+                <option value="specialist">Especialista</option>
+                <option value="occultist">Ocultista</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <label>Nex</label>
+                <input type="text" name="attr_nex" value="" spellcheck="false" />
+                <input type="text" name="attr_nex_effort_points_by_round" value="" spellcheck="false" readonly />
+            </div>
+            <div>
+                <label>Desl</label>
+                <input type="text" name="attr_desl" value="" spellcheck="false" />
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type="text" name="attr_health_points" value="" spellcheck="false" />
+                <div>
+                    <span>PV</span>
+                    <label>Pontos de vida</label>
+                    <div>
+                        <label>MOD PV</label>
+                        <input type="text" name="attr_health_points_mod" value="">
+                    </div>
+                </div>
+                <div>
+                    <label>Atuais</label>
+                    <input type="text" name="attr_current_health_points" value="" spellcheck="false" />
+                </div>
+            </div>
+            <div>
+                <input type="text" name="attr_effort_points" value="" spellcheck="false" />
+                <div>
+                    <span>PE</span>
+                    <label>Pontos de esforço</label>
+                    <div>
+                        <label>MOD PE</label>
+                        <input type="text" name="attr_effort_points_mod" value="">
+                    </div>
+                </div>
+                <div>
+                    <label>Atuais</label>
+                    <input type="text" name="attr_current_effort_points" value="" spellcheck="false" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <input type="text" name="attr_defense" value="10 + @{agility}" spellcheck="false" readonly />
+                </div>
+                <div>
+                    <label>Defesa</label>
+                    <div>
+                        <span>=10+AGI+</span>
+                        <input type="text" name="attr_defense_equipment" value="" spellcheck="false" />+
+                        <input type="text" name="attr_defense_others" value="" spellcheck="false" />
+                    </div>
+                </div>
+                <div>
+                    <label>Esquiva</label>
+                    <input type="text" name="attr_dodge" value="" spellcheck="false" />
+                    <label>Red. Bloqueio</label>
+                    <input type="text" name="attr_block" value="" spellcheck="false" />
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="text" name="attr_sanity" />
+                    <div>
+                        <span>SAN</span>
+                        <label> Sanidade </label>
+                        <div>
+                            <label>MOD SAN</label>
+                            <input type="text" name="attr_sanity_mod" value="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span>Atuais</span>
+                    <input type="text" name="attr_current_sanity" value="" spellcheck="false" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <label>Proteções</label>
+            <input type="text" name="attr_protections" value="" spellcheck="false" />
+        </div>
+        <div>
+            <label>Resistências</label>
+            <input type="text" name="attr_resistances" value="" spellcheck="false" />
+        </div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <span>Ataques</span>
+        <span>Teste</span>
+        <span>Dano</span>
+        <span>Critico/Alcance/Especial</span>
+    </div>
+    <fieldset class="repeating_attacks">
+        <div>
+            <input type="text" name="attr_attack_name" value="" spellcheck="false" />
+            <input type="text" name="attr_attack_test" value="" spellcheck="false" />
+            <input type="text" name="attr_attack_damage" value="" spellcheck="false" />
+            <input type="text" name="attr_attack_description" value="" spellcheck="false" />
+        </div>
+    </fiefieldset>
+</div>
