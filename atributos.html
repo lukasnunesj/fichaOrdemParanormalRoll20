@@ -1,43 +1,117 @@
+<style>
+    /* UTILITY */
+    .u-dn {
+        display: none;
+    }
+
+    /* ATTRIBUTE BLOCK */
+
+    .c-attributes-block {
+        width: 300px;
+        position: relative;
+        text-align: center;
+    }
+
+    .c-attributes-block--image {
+        width: 100%;
+        height: auto;
+    }
+
+    .c-attributes-attribute {
+        height: 30px;
+        width: 35px;
+        position: absolute;
+    }
+
+    .c-attributes-attribute input {
+        height: 30px;
+        width: 35px;
+        font-size: 28px;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .c-attributes-attribute input:hover,
+    .c-attributes-attribute input:focus {
+        border-color: red;
+        color: red;
+    }
+
+    .c-attributes-attribute--agility {
+        margin-top: 32px;
+        margin-left: 132px;
+    }
+
+    .c-attributes-attribute--strength {
+        margin-top: 95px;
+        margin-left: 39px;
+    }
+
+    .c-attributes-attribute--intellect {
+        margin-top: 95px;
+        margin-left: 226px;
+    }
+
+    .c-attributes-attribute--presence {
+        margin-top: 208px;
+        margin-left: 66px;
+    }
+
+    .c-attributes-attribute--vigor {
+        margin-top: 208px;
+        margin-left: 199px;
+    }
+</style>
 <div>
-    <!-- Attributes -->
+    <!-- Attributes Block -->
     <div>
-        <div>
-            <label>
-                Agilidade
-                <span>AGI</span>
-            </label>
-            <input type="text" name="attr_agility" value="" spellcheck="false" />
-        </div>
-        <div>
-            <label>
-                Força
-                <span>FOR</span>
-            </label>
-            <input type="text" name="attr_strength" value="" spellcheck="false" />
-        </div>
-        <div>
-            <label>
-                Presença
-                <span>PRE</span>
-            </label>
-            <input type="text" name="attr_presence" value="" spellcheck="false" />
-        </div>
-        <div>
-            <label>
-                Vigor
-                <span>VIG</span>
-            </label>
-            <input type="text" name="attr_vigor" value="" spellcheck="false" />
-        </div>
-        <div>
-            <label>
-                Intelecto
-                <span>INT</span>
-            </label>
-            <input type="text" name="attr_intellect" value="" spellcheck="false" />
+        <div class="c-attributes-block">
+            <div class="c-attributes-attribute c-attributes-attribute--agility">
+                <label class="u-dn">
+                    Agilidade
+                    <span>AGI</span>
+                </label>
+                <input type="text" name="attr_agility" value="1" spellcheck="false" />
+            </div>
+
+            <div class="c-attributes-attribute c-attributes-attribute--strength">
+                <label class="u-dn">
+                    Força
+                    <span>FOR</span>
+                </label>
+                <input type="text" name="attr_strength" value="1" spellcheck="false" />
+            </div>
+
+            <div class="c-attributes-attribute c-attributes-attribute--intellect">
+                <label class="u-dn">
+                    Intelecto
+                    <span>INT</span>
+                </label>
+                <input type="text" name="attr_intellect" value="1" spellcheck="false" />
+            </div>
+
+            <div class="c-attributes-attribute c-attributes-attribute--presence">
+                <label class="u-dn">
+                    Presença
+                    <span>PRE</span>
+                </label>
+                <input type="text" name="attr_presence" value="1" spellcheck="false" />
+            </div>
+
+            <div class="c-attributes-attribute c-attributes-attribute--vigor">
+                <label class="u-dn">
+                    Vigor
+                    <span>VIG</span>
+                </label>
+                <input type="text" name="attr_vigor" value="1" spellcheck="false" />
+            </div>
+
+            <img class="c-attributes-block--image" src="pentagrama_atributos_dark.png" width="512" height="516" />
         </div>
     </div>
-    <!-- End Attributes -->
+    <!-- End Attributes Block -->
+
     <div>
         <div>
             <label>Origem</label>
