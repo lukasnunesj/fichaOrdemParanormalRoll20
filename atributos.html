@@ -1,73 +1,10 @@
-<style>
-    /* UTILITY */
-    .u-dn {
-        display: none;
-    }
+<link rel="stylesheet" href="index.css">
 
-    /* ATTRIBUTE BLOCK */
-
-    .c-attributes-block {
-        width: 300px;
-        position: relative;
-        text-align: center;
-    }
-
-    .c-attributes-block--image {
-        width: 100%;
-        height: auto;
-    }
-
-    .c-attributes-attribute {
-        height: 30px;
-        width: 35px;
-        position: absolute;
-    }
-
-    .c-attributes-attribute input {
-        height: 30px;
-        width: 35px;
-        font-size: 28px;
-        text-align: center;
-        border: 1px solid transparent;
-        border-radius: 4px;
-    }
-
-    .c-attributes-attribute input:hover,
-    .c-attributes-attribute input:focus {
-        border-color: red;
-        color: red;
-    }
-
-    .c-attributes-attribute--agility {
-        margin-top: 32px;
-        margin-left: 132px;
-    }
-
-    .c-attributes-attribute--strength {
-        margin-top: 95px;
-        margin-left: 39px;
-    }
-
-    .c-attributes-attribute--intellect {
-        margin-top: 95px;
-        margin-left: 226px;
-    }
-
-    .c-attributes-attribute--presence {
-        margin-top: 208px;
-        margin-left: 66px;
-    }
-
-    .c-attributes-attribute--vigor {
-        margin-top: 208px;
-        margin-left: 199px;
-    }
-</style>
-<div>
+<div class="container">
     <!-- Attributes Block -->
     <div>
-        <div class="c-attributes-block">
-            <div class="c-attributes-attribute c-attributes-attribute--agility">
+        <div class="c-attributes__block">
+            <div class="c-attributes__attribute c-attributes__attribute--agility">
                 <label class="u-dn">
                     Agilidade
                     <span>AGI</span>
@@ -75,7 +12,7 @@
                 <input type="text" name="attr_agility" value="1" spellcheck="false" />
             </div>
 
-            <div class="c-attributes-attribute c-attributes-attribute--strength">
+            <div class="c-attributes__attribute c-attributes__attribute--strength">
                 <label class="u-dn">
                     Força
                     <span>FOR</span>
@@ -83,7 +20,7 @@
                 <input type="text" name="attr_strength" value="1" spellcheck="false" />
             </div>
 
-            <div class="c-attributes-attribute c-attributes-attribute--intellect">
+            <div class="c-attributes__attribute c-attributes__attribute--intellect">
                 <label class="u-dn">
                     Intelecto
                     <span>INT</span>
@@ -91,7 +28,7 @@
                 <input type="text" name="attr_intellect" value="1" spellcheck="false" />
             </div>
 
-            <div class="c-attributes-attribute c-attributes-attribute--presence">
+            <div class="c-attributes__attribute c-attributes__attribute--presence">
                 <label class="u-dn">
                     Presença
                     <span>PRE</span>
@@ -99,7 +36,7 @@
                 <input type="text" name="attr_presence" value="1" spellcheck="false" />
             </div>
 
-            <div class="c-attributes-attribute c-attributes-attribute--vigor">
+            <div class="c-attributes__attribute c-attributes__attribute--vigor">
                 <label class="u-dn">
                     Vigor
                     <span>VIG</span>
@@ -107,13 +44,14 @@
                 <input type="text" name="attr_vigor" value="1" spellcheck="false" />
             </div>
 
-            <img class="c-attributes-block--image" src="pentagrama_atributos_dark.png" width="512" height="516" />
+            <img class="c-attributes__block--image" src="pentagrama_atributos_dark.png" width="512" height="516" />
         </div>
     </div>
     <!-- End Attributes Block -->
 
-    <div>
-        <div>
+    <div class="u-df u-fd-column o-col-6">
+        <div class="c-input-field--type-1 u-row-margin">
+            <span class="c-input__arrange"></span>
             <label>Origem</label>
             <!--
               Acadêmico,Agente de Saúde,Amnésico,Artista,Atleta,Chef,Criminoso,Cultista Arrependido,Desgarrado,Engenheiro,Executivo,Investigador,Lutador,Magnata,Mercenário,Militar,Operário,Policial,Religioso,Servidor Público,T.I.,Teórico da Conspiração,Trabalhador Rural,Trambiqueiro,Universitário,Vítima
@@ -147,7 +85,8 @@
                 <option value="victim">Vítima</option>
             </select>
         </div>
-        <div>
+        <div class="c-input-field--type-1 u-row-margin">
+            <span class="c-input__arrange"></span>
             <label>Classe</label>
             <select name="attr_class">
                 <option value="fighter">Combatente</option>
@@ -155,46 +94,62 @@
                 <option value="occultist">Ocultista</option>
             </select>
         </div>
-        <div>
-            <div>
-                <label>Nex</label>
-                <input type="text" name="attr_nex" value="" spellcheck="false" />
-                <input type="text" name="attr_nex_effort_points_by_round" value="" spellcheck="false" readonly />
+        <div class="u-row-margin u-df">
+            <div class="o-col-6">
+                <div class="c-input-field--type-1">
+                    <span class="c-input__arrange"></span>
+                    <label>Nex</label>
+                    <input type="text" class="u-mw-45" name="attr_nex" value="" spellcheck="false" />
+                    <input type="text" class="u-mw-45" name="attr_nex_effort_points_by_round" value="" spellcheck="false" readonly />
+                </div>
             </div>
-            <div>
-                <label>Desl</label>
-                <input type="text" name="attr_desl" value="" spellcheck="false" />
+            <div class="o-col-6">
+                <div class="c-input-field--type-1">
+                    <span class="c-input__arrange"></span>
+                    <label>Desl</label>
+                    <input type="text" class="u-mw-80" name="attr_desl" value="" spellcheck="false" />
+                </div>
             </div>
         </div>
-        <div>
-            <div>
-                <input type="text" name="attr_health_points" value="" spellcheck="false" />
-                <div>
-                    <span>PV</span>
-                    <label>Pontos de vida</label>
-                    <div>
+        <div class="u-df">
+            <div class="o-col-6">
+                <div class="c-input-field--hp">
+                    <span class="c-input__arrange"></span>
+                    <div class="c-hp__header">
+                        <input type="text" name="attr_health_points" value="" spellcheck="false" />
+                        <div class="c-input-field__labels">
+                            <span>PV</span>
+                            <label>Pontos de vida</label>
+                        </div>
+                    </div>
+                    <div class="c-hp-mod__row">
                         <label>MOD PV</label>
                         <input type="text" name="attr_health_points_mod" value="">
                     </div>
-                </div>
-                <div>
-                    <label>Atuais</label>
-                    <input type="text" name="attr_current_health_points" value="" spellcheck="false" />
+                    <div class="c-hp-current">
+                        <label>Atuais</label>
+                        <input type="text" name="attr_current_health_points" value="" spellcheck="false" />
+                    </div>
                 </div>
             </div>
-            <div>
-                <input type="text" name="attr_effort_points" value="" spellcheck="false" />
-                <div>
-                    <span>PE</span>
-                    <label>Pontos de esforço</label>
-                    <div>
+            <div class="o-col-6">
+                <div class="c-input-field--ep">
+                    <span class="c-input__arrange"></span>
+                    <div class="c-ep__header">
+                        <input type="text" name="attr_effort_points" value="" spellcheck="false" />
+                        <div class="c-input-field__labels">
+                            <span>PE</span>
+                            <label>Pontos de esforço</label>
+                        </div>
+                    </div>
+                    <div class="c-ep-mod__row">
                         <label>MOD PE</label>
                         <input type="text" name="attr_effort_points_mod" value="">
                     </div>
-                </div>
-                <div>
-                    <label>Atuais</label>
-                    <input type="text" name="attr_current_effort_points" value="" spellcheck="false" />
+                    <div class="c-ep-current">
+                        <label>Atuais</label>
+                        <input type="text" name="attr_current_effort_points" value="" spellcheck="false" />
+                    </div>
                 </div>
             </div>
         </div>
